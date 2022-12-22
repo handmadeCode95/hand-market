@@ -2,7 +2,11 @@
 module.exports = {
     content: ["./pages/**/*.tsx", "./components/**/*.tsx"],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ["Spoqa Han Sans Neo", "Arial", "sans-serif"],
+            },
+        },
     },
-    plugins: [],
+    plugins: [require("@tailwindcss/forms")],
 };
